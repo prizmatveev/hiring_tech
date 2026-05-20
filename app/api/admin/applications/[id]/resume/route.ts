@@ -1,5 +1,10 @@
 import { NextResponse } from 'next/server';
 import { prisma } from '@/lib/prisma';
+
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+export const runtime = 'nodejs';
+
 import { access, readFile } from 'fs/promises';
 import { constants } from 'fs';
 import { join } from 'path';
